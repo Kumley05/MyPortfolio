@@ -53,6 +53,53 @@ body {
     }
 }
 
+/* TECH ICONS */
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;  /* Space between icons */
+    margin: 2rem 0;
+    flex-wrap: wrap;  /* Allows icons to wrap on smaller screens */
+    max-width: 800px;  /* Maximum width of the container */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tech-icons img {
+    width: 50px;  /* Fixed width for consistency */
+    height: 50px;  /* Fixed height for consistency */
+    object-fit: contain;  /* Maintains aspect ratio */
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover effect */
+.tech-icons img:hover {
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tech-icons {
+        gap: 1.5rem;
+    }
+    .tech-icons img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-icons {
+        gap: 1rem;
+    }
+    .tech-icons img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
 
 body {
     color: #e6e6e6;
